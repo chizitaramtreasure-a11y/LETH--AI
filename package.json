@@ -1,0 +1,14 @@
+{
+  "name": "leth-ai",
+  "version": "1.0.0",
+  "description": "LETH Learning Thing AI Tutor",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "openai": "^5.19.1"
+  }
+}
