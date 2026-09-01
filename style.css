@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: #111827;
+  color: white;
+  padding: 25px 18px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.tagline {
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 5px 0 35px;
+}
+
+nav button {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #cbd5e1;
+  padding: 13px;
+  text-align: left;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+nav button:hover,
+nav button.active {
+  background: #243047;
+  color: white;
+}
+
+.main {
+  flex: 1;
+  padding: 35px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.top h1 {
+  font-size: 30px;
+}
+
+.top p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.streak {
+  background: white;
+  padding: 12px 18px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.06);
+}
+
+.hero {
+  background: linear-gradient(135deg, #6257ff, #8b5cf6);
+  color: white;
+  padding: 30px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+
+.hero h2 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #ede9fe;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.start-btn {
+  background: white;
+  color: #5b4ee8;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #64748b;
+}
+
+.progress {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.progress div {
+  height: 100%;
+  background: #635bff;
+}
+
+.chat {
+  margin-top: 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 22px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.message {
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.ai {
+  background: #f1f5f9;
+}
+
+.user {
+  background: #635bff;
+  color: white;
+  margin-left: 20%;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 13px;
+  outline: none;
+}
+
+.input-row button {
+  border: none;
+  background: #635bff;
+  color: white;
+  padding: 0 22px;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: 75px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  nav button {
+    font-size: 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .main {
+    padding: 20px;
+  }
+}
