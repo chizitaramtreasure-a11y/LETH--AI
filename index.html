@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LETH — Learning Thing</title>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="logo">LETH</div>
+      <div class="tagline">Learning Thing</div>
+
+      <nav>
+        <button class="active">🏠 Home</button>
+        <button>📚 Learn</button>
+        <button>🤖 AI Tutor</button>
+        <button>📊 Progress</button>
+        <button>🗓️ Schedule</button>
+        <button>⚙️ Customize</button>
+      </nav>
+    </aside>
+
+    <main class="main">
+
+      <header class="top">
+        <div>
+          <h1>Hello, Learner 👋</h1>
+          <p>Ready to learn something new?</p>
+        </div>
+
+        <div class="streak">
+          🔥 7 day streak
+        </div>
+      </header>
+
+      <section class="hero">
+        <h2>Learn with LETH 🤖</h2>
+
+        <p>
+          Your personal AI learning assistant.
+          Ask questions, learn, practice and improve.
+        </p>
+
+        <button class="start-btn" id="startLearning">
+          Start Learning →
+        </button>
+      </section>
+
+      <section class="cards">
+
+        <div class="card">
+          <h3>📐 Mathematics</h3>
+          <p>Quadratic Equations</p>
+
+          <div class="progress">
+            <div style="width:78%"></div>
+          </div>
+
+          <small>78% mastery</small>
+        </div>
+
+        <div class="card">
+          <h3>⚛️ Physics</h3>
+          <p>Motion</p>
+
+          <div class="progress">
+            <div style="width:64%"></div>
+          </div>
+
+          <small>64% mastery</small>
+        </div>
+
+        <div class="card">
+          <h3>🧪 Chemistry</h3>
+          <p>Atoms & Elements</p>
+
+          <div class="progress">
+            <div style="width:82%"></div>
+          </div>
+
+          <small>82% mastery</small>
+        </div>
+
+      </section>
+
+      <section class="chat">
+
+        <div class="message ai">
+          <strong>🤖 LETH</strong>
+
+          <p>
+            Welcome! Ask me a question and I'll give you
+            the <strong>answer first</strong>, then explain it.
+          </p>
+        </div>
+
+        <div class="input-row">
+
+          <input
+            id="question"
+            type="text"
+            placeholder="Ask LETH anything..."
+          >
+
+          <button id="sendButton">
+            Send
+          </button>
+
+        </div>
+
+        <div id="chatMessages"></div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Our JavaScript -->
+  <script src="app.js"></script>
+
+</body>
+</html>
